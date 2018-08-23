@@ -5,13 +5,18 @@ public class fundBalance {
     String ownerName = "Oww";
     double withdrawal = 100;
 
-    for(int i = 0; i < ownerNames.length; i++) {
-      if(ownerName == ownerNames[i]) {
-        int ownerMoney = balances[i];
-        double total = ownerMoney + withdrawal;
+    fundBalance(ownerName, balances, ownerNames, withdrawal);
+
+  }
+
+  public static void fundBalance(String ownerName, int[] arrOfNum, String[] arrOfNames, double withdrawal) {
+    double total = 0;
+    for(int i = 0; i < arrOfNames.length; i++) {
+      if(ownerName == arrOfNames[i]) {
+        int ownerMoney = arrOfNum[i];
+        total = ownerMoney + withdrawal;
         System.out.println(ownerName + " " + total);
       }
     }
-
   }
 }

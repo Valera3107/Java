@@ -1,92 +1,173 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Loops {
   public static void main(String[] args) {
     int max = 20, min = -10;
 
-    int sumOfInt = 0;
-    float sumOfFloat = 0;
-
-    int multOfInt = 0;
-    float multOfFloat = 0;
-
-    int maxOfInt = 0;
-    float maxOfFloat = 0;
-
-    int minOfInt = 0;
-    float minOfFloat = 0;
-
-    int secondLargestNumOfInt = 0;
-    int secondLargestNumOfFloat = 0;
-
     int[] arrOfIntegersNumbers = new int[10];
 
-    float[] arrOfFloatNumbers = new float[10];
+    double[] arrOfDoubleNumbers = new double[10];
 
-
-    for (int i = 0; i < arrOfFloatNumbers.length; i++) {
+    for (int i = 0; i < arrOfDoubleNumbers.length; i++) {
       float randomFloatNumber = min + (float) (Math.random() * max);
       int randomIntegerNumber = min + (int) (Math.random() * max);
-      arrOfFloatNumbers[i] = randomFloatNumber;
+      arrOfDoubleNumbers[i] = randomFloatNumber;
       arrOfIntegersNumbers[i] = randomIntegerNumber;
     }
 
+    System.out.println(Arrays.toString(arrOfIntegersNumbers));
+    System.out.println(Arrays.toString(arrOfDoubleNumbers));
 
-    for (int i = 0; i < arrOfIntegersNumbers.length; i++) {
-      sumOfFloat += arrOfFloatNumbers[i];
-      sumOfInt += arrOfIntegersNumbers[i];
 
-      multOfFloat *= arrOfFloatNumbers[i];
-      multOfInt *= arrOfIntegersNumbers[i];
+    int sumOfInt = sum(arrOfIntegersNumbers);
+    double sumOfDouble = sum(arrOfDoubleNumbers);
 
-      if(maxOfFloat < arrOfFloatNumbers[i]){
-         maxOfFloat = arrOfFloatNumbers[i];
-      }
+    System.out.println("SumOfInt " + sumOfInt);
+    System.out.println("SumOfDouble " + sumOfDouble);
 
-      if(maxOfInt < arrOfIntegersNumbers[i]){
-        maxOfInt = arrOfIntegersNumbers[i];
-      }
+    int multOfInt = multiplication(arrOfIntegersNumbers);
+    double multOfDouble = multiplication(arrOfDoubleNumbers);
 
-      if(minOfFloat > arrOfFloatNumbers[i]){
-        minOfFloat = arrOfFloatNumbers[i];
-      }
+    System.out.println("MultOfInt " + multOfInt);
+    System.out.println("MultOfDouble " + multOfDouble);
 
-      if(minOfInt > arrOfIntegersNumbers[i]){
-        minOfInt = arrOfIntegersNumbers[i];
+    int maxOfInt = max(arrOfIntegersNumbers);
+    double maxOfDouble = max(arrOfDoubleNumbers);
+
+    System.out.println("MaxOfInt " + maxOfInt);
+    System.out.println("MaxOfDouble " + maxOfDouble);
+
+    int minOfInt = min(arrOfIntegersNumbers);
+    double minOfDouble = min(arrOfDoubleNumbers);
+
+    System.out.println("MinOfInt " + minOfInt);
+    System.out.println("MinOfDouble " + minOfDouble);
+
+    int secondLargestNumOfInt = secondLargest(arrOfIntegersNumbers);
+    double secondLargestNumOfDouble = secondLargest((arrOfDoubleNumbers));
+
+    System.out.println("SLOfInt " + secondLargestNumOfInt);
+    System.out.println("SLOfDouble " + secondLargestNumOfDouble);
+  }
+
+  public static int secondLargest(int[] arrOfInt) {
+    int max = 0;
+    for (int i = 0; i < arrOfInt.length; i++) {
+      if(max < arrOfInt[i]){
+        max = arrOfInt[i];
+        break;
       }
     }
 
-    for (int i = 0; i < arrOfIntegersNumbers.length; i++) {
-      if(minOfInt < arrOfIntegersNumbers[i]) {
-        secondLargestNumOfInt = arrOfIntegersNumbers[i];
+    int secondMax = 0;
+    for (int i = 0; i < arrOfInt.length; i++) {
+      if(secondMax < arrOfInt[i] && secondMax < max){
+        secondMax = arrOfInt[i];
+        break;
       }
     }
 
-//    for (int i = 0; i < arrOfFloatNumbers.length; i++) {
-//      if(minOfFloat < arrOfFloatNumbers[i]) {
-//        secondLargestNumOfFloat = arrOfFloatNumbers[i];
-//      }
-//    }
-    System.out.print("arr f :");
-    for (int i = 0; i < arrOfFloatNumbers.length; i++) {
-      System.out.print(arrOfFloatNumbers[i] + " ");
+    return secondMax;
+  }
+
+  public static double secondLargest(double[] arrOfDouble) {
+    double max = 0;
+    for (int i = 0; i < arrOfDouble.length; i++) {
+      if(max < arrOfDouble[i]){
+        max = arrOfDouble[i];
+        break;
+      }
     }
 
-    System.out.println("----------------");
-
-    System.out.print("arr i :");
-    for (int i = 0; i < arrOfFloatNumbers.length; i++) {
-      System.out.print(arrOfIntegersNumbers[i] + " ");
+    double secondMax = 0;
+    for (int i = 0; i < arrOfDouble.length; i++) {
+      if(secondMax < arrOfDouble[i] && secondMax < max){
+        secondMax = arrOfDouble[i];
+        break;
+      }
     }
-    System.out.println();
 
-    System.out.println("max f " + maxOfFloat);
-    System.out.println("min f " + minOfFloat);
-    System.out.println("min i " + minOfInt);
-    System.out.println("max i " + maxOfInt);
+    return secondMax;
+  }
 
-    System.out.println("mult f " + multOfFloat);
-    System.out.println("mult i " + multOfInt);
-    System.out.println("sum f " + sumOfFloat);
-    System.out.println("sum i " + sumOfInt);
+  public static int multiplication(int[] arrOfInt){
+    int mult = 1;
+    for (int i = 0; i < arrOfInt.length; i++) {
+      mult*=arrOfInt[i];
+    }
+    return mult;
+  }
 
+  public static double multiplication(double[] arrOfDouble){
+    double mult = 1;
+    for (int i = 0; i < arrOfDouble.length; i++) {
+      mult*=arrOfDouble[i];
+    }
+    return mult;
+  }
+
+
+  public static int max(int[] arrOfInt){
+  int max = 0;
+  for (int i = 0; i < arrOfInt.length; i++) {
+    if(max < arrOfInt[i]) {
+      max = arrOfInt[i];
+      break;
+    }
+  }
+  return max;
+}
+
+  public static double max(double[] arrOfDouble){
+    double max = 0;
+    for (int i = 0; i < arrOfDouble.length; i++) {
+      if(max < arrOfDouble[i]) {
+        max = arrOfDouble[i];
+        break;
+      }
+    }
+    return max;
+  }
+
+public static int min(int[] arrOfInt){
+  int min = 0;
+  for (int i = 0; i < arrOfInt.length; i++) {
+    if(min > arrOfInt[i]) {
+      min = arrOfInt[i];
+      break;
+    }
+  }
+    return min;
+}
+
+  public static double min(double[] arrOfDouble){
+    double min = 0;
+    for (int i = 0; i < arrOfDouble.length; i++) {
+      if(min > arrOfDouble[i]) {
+        min = arrOfDouble[i];
+        break;
+      }
+    }
+    return min;
+  }
+
+
+  public static int sum(int[] arrOfInt){
+    int total = 0;
+    for (int i = 0; i < arrOfInt.length; i++) {
+      total+=arrOfInt[i];
+    }
+
+    return total;
+  }
+
+  public static double sum(double[] arrOfDouble){
+    double total = 0;
+    for (int i = 0; i < arrOfDouble.length; i++) {
+      total+=arrOfDouble[i];
+    }
+
+    return total;
   }
 }

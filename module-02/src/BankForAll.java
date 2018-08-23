@@ -3,21 +3,25 @@ public class BankForAll {
     int[] balances = {1200, 250, 2000, 500, 3200};
     String[] ownerNames = {"Jane", "Ann", "Jack", "Oww", "Lane"};
     String ownerName = "Ann";
-    double withdrawal = 500;
+    double withdrawal = 100;
     double commision = 0.05;
 
-    for(int i = 0; i< ownerNames.length; i++) {
-      if(ownerName == ownerNames[i]){
-        int ownerMoney = balances[i];
+    getMoneyFromBalance(balances, ownerNames, ownerName, withdrawal, commision);
+
+  }
+
+  public static void getMoneyFromBalance(int[] arrOfMoney, String[] arrOfOwnerNames, String name, double withdrawal, double commision) {
+    for(int i = 0; i< arrOfOwnerNames.length; i++) {
+      if(name == arrOfOwnerNames[i]){
+        int ownerMoney = arrOfMoney[i];
         double commisionMoney = withdrawal * commision;
         double total = ownerMoney - withdrawal - commisionMoney;
         if(total < 0) {
-          System.out.println(ownerName + " No");
+          System.out.println(name + " No");
           break;
         }
-        System.out.println(ownerName + " " + withdrawal + " " + total);
+        System.out.println(name + " " + withdrawal + " " + total);
       }
     }
-
   }
 }
