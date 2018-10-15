@@ -22,7 +22,11 @@ public class Calculation {
 
     //===========
 
-    //System.out.println(MyCalc.calcPI(20));
+    System.out.println(MyCalc.calcPI(20));
+
+    //===========
+
+    MyPyramid.printPyramid(9);
 
     //===========
 
