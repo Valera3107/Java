@@ -12,29 +12,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Monitor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/module_2_7/Tech/Monitor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#134#135#0" expanded="true" />
-                <element signature="e#162#163#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-                <element signature="e#908#909#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Shape.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/module_2_7/MyShapes/Shape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="225">
               <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding>
                 <element signature="e#115#116#0" expanded="true" />
@@ -61,8 +42,8 @@
       <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/module_2_7/MyShapes/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="34" column="140" lean-forward="true" selection-start-line="34" selection-start-column="140" selection-end-line="34" selection-end-column="140" />
+            <state relative-caret-position="700">
+              <caret line="34" column="140" lean-forward="false" selection-start-line="34" selection-start-column="140" selection-end-line="34" selection-end-column="140" />
               <folding>
                 <element signature="e#296#297#0" expanded="true" />
                 <element signature="e#314#315#0" expanded="true" />
@@ -78,7 +59,7 @@
       <file leaf-file-name="Rectangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/module_2_7/MyShapes/Rectangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
+            <state relative-caret-position="425">
               <caret line="19" column="134" lean-forward="false" selection-start-line="19" selection-start-column="134" selection-end-line="19" selection-end-column="134" />
               <folding>
                 <element signature="e#304#305#0" expanded="true" />
@@ -92,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Circle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Circle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/module_2_7/MyShapes/Circle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -102,6 +83,93 @@
                 <element signature="e#457#458#0" expanded="true" />
                 <element signature="e#488#489#0" expanded="true" />
                 <element signature="e#511#512#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindNumInArrayApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/module_1_6/FindNumInArrayApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/module_2_7/AdditionalModule/Dog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+              <folding>
+                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/module_2_7/AdditionalModule/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" column="102" lean-forward="false" selection-start-line="14" selection-start-column="102" selection-end-line="14" selection-end-column="102" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bus.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/module_2_7/AdditionalModule/Bus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+              <folding>
+                <element signature="e#228#229#0" expanded="true" />
+                <element signature="e#251#252#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/module_2_7/AdditionalModule/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+              <folding>
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#495#496#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#597#598#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#651#652#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+                <element signature="e#723#724#0" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#784#785#0" expanded="true" />
+                <element signature="e#833#834#0" expanded="true" />
+                <element signature="e#873#874#0" expanded="true" />
+                <element signature="e#898#899#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#951#952#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,11 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/module_1_6/MatrixPrinterApp.java" />
-        <option value="$PROJECT_DIR$/src/module_1_6/SearchElementApp.java" />
-        <option value="$PROJECT_DIR$/src/module_1_6/SortArrayApp.java" />
-        <option value="$PROJECT_DIR$/src/module_1_6/ArrayPrinterApp.java" />
-        <option value="$PROJECT_DIR$/src/module_1_6/FindNumInArrayApp.java" />
         <option value="$PROJECT_DIR$/src/module_1_5/SearchPerfectNumberApp.java" />
         <option value="$PROJECT_DIR$/src/A.java" />
         <option value="$PROJECT_DIR$/src/module_2_1/JavaClassApp.java" />
@@ -176,6 +239,11 @@
         <option value="$PROJECT_DIR$/src/module_2_7/MyShapes/Triangle.java" />
         <option value="$PROJECT_DIR$/src/module_2_7/MyShapes/Main.java" />
         <option value="$PROJECT_DIR$/src/module_2_7/MyShapes/Circle.java" />
+        <option value="$PROJECT_DIR$/src/module_1_6/FindNumInArrayApp.java" />
+        <option value="$PROJECT_DIR$/src/module_2_7/AdditionalModule/Dog.java" />
+        <option value="$PROJECT_DIR$/src/module_2_7/AdditionalModule/Person.java" />
+        <option value="$PROJECT_DIR$/src/module_2_7/AdditionalModule/Bus.java" />
+        <option value="$PROJECT_DIR$/src/module_2_7/AdditionalModule/Main.java" />
       </list>
     </option>
   </component>
@@ -200,10 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,12 +291,16 @@
               <item name="MainAcademyCourse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="module_2_7" type="462c0819:PsiDirectoryNode" />
-              <item name="MyShapes" type="462c0819:PsiDirectoryNode" />
+              <item name="AdditionalModule" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,13 +321,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="FindNumInArrayApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="module_1_6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="module_1_6.FindNumInArrayApp" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="MainAcademyCourse" />
+      <envs />
     </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -269,6 +356,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="module_2_7.MyShapes.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="MainAcademyCourse" />
+      <envs />
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="module_2_7.AdditionalModule.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="module_2_7.AdditionalModule.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -318,25 +424,6 @@
       <module name="MainAcademyCourse" />
       <envs />
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="exemple.testPack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="exemple.testPack.Test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="MainAcademyCourse" />
-      <envs />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -349,25 +436,6 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
-      <envs />
-    </configuration>
-    <configuration name="threadExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="multithread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="multithread.threadExample" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="MainAcademyCourse" />
       <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -431,19 +499,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="1" class="java.lang.String" itemvalue="Application.threadExample" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Operations" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Main (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Operations" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Main (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.FindNumInArrayApp" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main (2)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Operations" />
-        <item index="3" class="java.lang.String" itemvalue="Application.threadExample" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main (2)" />
+        <item index="1" class="java.lang.String" itemvalue="Application.FindNumInArrayApp" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Main (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Operations" />
       </list>
     </recent_temporary>
   </component>
@@ -505,29 +573,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/module_1_5/SearchPerfectNumberApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/A.java" />
-    <entry file="file://$PROJECT_DIR$/src/OOP_Basic.java" />
-    <entry file="file://$PROJECT_DIR$/src/module_2_1/Computer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module_2_1/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/module_2_2/MatricsOperateApp.java" />
     <entry file="file://$PROJECT_DIR$/src/module_1_6/ArrayPrinterApp.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -709,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
           <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,20 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -762,18 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -781,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -790,21 +804,21 @@
         <state relative-caret-position="50">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="e#134#135#0" expanded="true" />
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#134#135#0" expanded="false" />
+            <element signature="e#162#163#0" expanded="false" />
+            <element signature="e#718#719#0" expanded="false" />
+            <element signature="e#758#759#0" expanded="false" />
+            <element signature="e#791#792#0" expanded="false" />
+            <element signature="e#819#820#0" expanded="false" />
+            <element signature="e#868#869#0" expanded="false" />
+            <element signature="e#908#909#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/module_2_7/MyShapes/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="225">
           <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
             <element signature="e#115#116#0" expanded="true" />
@@ -819,7 +833,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/module_2_7/MyShapes/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
+        <state relative-caret-position="425">
           <caret line="19" column="134" lean-forward="false" selection-start-line="19" selection-start-column="134" selection-end-line="19" selection-end-column="134" />
           <folding>
             <element signature="e#304#305#0" expanded="true" />
@@ -834,8 +848,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/module_2_7/MyShapes/Triangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="34" column="140" lean-forward="true" selection-start-line="34" selection-start-column="140" selection-end-line="34" selection-end-column="140" />
+        <state relative-caret-position="700">
+          <caret line="34" column="140" lean-forward="false" selection-start-line="34" selection-start-column="140" selection-end-line="34" selection-end-column="140" />
           <folding>
             <element signature="e#296#297#0" expanded="true" />
             <element signature="e#314#315#0" expanded="true" />
@@ -865,6 +879,83 @@
             <element signature="e#488#489#0" expanded="true" />
             <element signature="e#511#512#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module_1_6/FindNumInArrayApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module_2_7/AdditionalModule/Dog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module_2_7/AdditionalModule/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module_2_7/AdditionalModule/Bus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+          <folding>
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module_2_7/AdditionalModule/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="102" lean-forward="false" selection-start-line="14" selection-start-column="102" selection-end-line="14" selection-end-column="102" />
+          <folding />
         </state>
       </provider>
     </entry>
