@@ -1,0 +1,10 @@
+Person{id='AB7481DB', FirstName='Marry', LastName='Uaid', age=36, sex='woman', city='California', work='Police', salary=5000, animal=Animal{name='Muai', age=3, animal='car'}}
+
+Person{id='AB3128DB', FirstName='Frank', LastName='Sinatra', age=42, sex='man', city='Washington', work='Singer', salary=200000, animal=Animal{name='Kesha', age=4, animal='bird'}}
+
+Person{id='AB9786DB', FirstName='Alkapone', LastName='Sigei', age=56, sex='man', city='Miami', work='Thief', salary=1000000, animal=Animal{name='Piti', age=23, animal='monkey'}}
+
+Person{id='AB4885DB', FirstName='Piter', LastName='Parker', age=21, sex='man', city='New York', work='Programmer', salary=1500, animal=Animal{name='Barsic', age=12, animal='cat'}}
+
+Person{id='AB8186DB', FirstName='Harry', LastName='Potter', age=25, sex='man', city='Chicago', work='Magic-man', salary=0, animal=Animal{name='Rex', age=20, animal='dog'}}
+

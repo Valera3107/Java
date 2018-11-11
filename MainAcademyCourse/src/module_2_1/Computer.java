@@ -3,7 +3,7 @@ package module_2_1;
 public class Computer {
   private String manufacturer;
   private int serialNumber;
-  private float price;
+  private double price;
   private int quantityCPU;
   private int frequencyCPU;
 
@@ -50,11 +50,11 @@ public class Computer {
     this.serialNumber = serialNumber;
   }
 
-  public float getPrice() {
+  public double getPrice() {
     return price;
   }
 
-  public void setPrice(float price) {
+  public void setPrice(double price) {
     this.price = price;
   }
 

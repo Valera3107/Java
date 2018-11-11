@@ -8,6 +8,11 @@ public class main {
       new Computer("Samsung", 1010, 2300, 54, 23)
     };
 
+    for (Computer comp: arrOfComputers
+         ) {
+      comp.setPrice(comp.getPrice()*0.1 + comp.getPrice());
+    }
+
     Computer.view(arrOfComputers);
   }
 }
