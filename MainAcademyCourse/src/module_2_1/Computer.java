@@ -7,7 +7,7 @@ public class Computer {
   private int quantityCPU;
   private int frequencyCPU;
 
-  public Computer(String manufacturer, int serialNumber, float price, int quantityCPU, int frequencyCPU) {
+  public Computer(String manufacturer, int serialNumber, double price, int quantityCPU, int frequencyCPU) {
     this.manufacturer = manufacturer;
     this.serialNumber = serialNumber;
     this.price = price;
@@ -15,7 +15,7 @@ public class Computer {
     this.frequencyCPU = frequencyCPU;
   }
 
-  public Computer(String manufacturer, int serialNumber, float price) {
+  public Computer(String manufacturer, int serialNumber, double price) {
     this.manufacturer = manufacturer;
     this.serialNumber = serialNumber;
     this.price = price;
