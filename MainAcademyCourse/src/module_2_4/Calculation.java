@@ -22,7 +22,7 @@ public class Calculation {
 
     //===========
 
-    System.out.println(MyCalc.calcPI(20));
+    System.out.println(MyCalc.calcPI(10));
 
     //===========
 

@@ -5,8 +5,11 @@ import java.util.Arrays;
 
 public class main {
   public static void main(String[] args) {
-    int[][] arr_1 = {{2,4}, {2, 10}};
-    int[][] arr_2 = {{13,5}, {20, 16}};
+    int[][] arr_1 = {{2,4},
+                    {2, 10}};
+
+    int[][] arr_2 = {{13,5},
+                    {20, 16}};
 
     int[][] resultArr = Matrix.addMatrix(arr_1, arr_2);
     for (int[] arr:

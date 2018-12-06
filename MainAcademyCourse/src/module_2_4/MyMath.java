@@ -1,7 +1,7 @@
 package module_2_4;
 
 public class MyMath {
-  public static final double PI = 3.14;
+  public static final double PI = Math.PI;
 
   public static double areaOfCircle(double radius) {
     return Math.pow(radius, 2)*PI*0.5;
