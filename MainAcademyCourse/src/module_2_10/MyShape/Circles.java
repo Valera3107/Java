@@ -66,7 +66,7 @@ public class Circles extends Shapes implements Drawable, Comparable<Circles>, Co
       i++;
     }
 
-    shape.setShapeColor(color);
+    //shape.setShapeColor(color);
     shape.setRadius(rad);
 
     return shape;

@@ -76,7 +76,7 @@ public class Triangle extends Shapes implements Comparable<Triangle>, Comparator
   public static Triangle parseTriangle(String str) {
     StringTokenizer ST = new StringTokenizer(str, ":,");
     Triangle shape = new Triangle("Black", 0,0,0);
-    List list = new ArrayList<>();
+    double[] arr = new double[3];
     String color = "";
     int i = 1;
     while (ST.hasMoreElements()) {
@@ -84,15 +84,15 @@ public class Triangle extends Shapes implements Comparable<Triangle>, Comparator
         case 1:
           System.out.println("This is Triangle!");break;
         case 2: color = (String) ST.nextElement();break;
-        default: list.add(Double.parseDouble((String) ST.nextElement()));break;
+        default: arr[i-1] = (double) ST.nextElement();break;
       }
       i++;
     }
 
-    shape.setShapeColor(color);
-    shape.setA((double) list.get(0));
-    shape.setB((double) list.get(1));
-    shape.setC((double) list.get(2));
+    //shape.setShapeColor(color);
+    shape.setA(arr[0]);
+    shape.setB(arr[1]);
+    shape.setC(arr[2]);
     return shape;
   }
 }
