@@ -1,6 +1,4 @@
 import java.util.*;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -56,36 +54,22 @@ public class Main<T> {
     deleteOrderWithRUB(list);
 
     System.out.println("\n\nDelete by price: ");
-    deleteByPrice(list, 1000);
+    deleteByPrice(list);
 
   }
 
   private static <T extends Order> void splitByCity(List<T> list) {
     Map<String, List<T>> map = list.stream().collect(Collectors.groupingBy(e -> e.getUser().getCity()));
-    for (String s : map.keySet()
-      ) {
-      System.out.println(s + ":");
-      for (T e : map.get(s)
-        ) {
-        System.out.println(e);
-      }
-    }
+    new ArrayList<>(map.keySet()).forEach(e -> System.out.println(map.get(e)));
   }
 
   private static <T extends Order> void splitByCurrency(List<T> list) {
-    Map<Currency, List<T>> map = list.stream().collect(Collectors.groupingBy(e -> e.getCurrency()));
-    for (Currency s : map.keySet()
-      ) {
-      System.out.println(s + ":");
-      for (T e : map.get(s)
-        ) {
-        System.out.println(e);
-      }
-    }
+    Map<Currency, List<T>> map = list.stream().collect(Collectors.groupingBy(Order::getCurrency));
+    new ArrayList<>(map.keySet()).forEach(e -> System.out.println(map.get(e)));
   }
 
-  private static <T extends Order> void deleteByPrice(List<T> list, int price) {
-    list.stream().filter(e -> e.getPrice() > price).forEach(System.out::println);
+  private static <T extends Order> void deleteByPrice(List<T> list) {
+    list.stream().filter(e -> e.getPrice() > 1000).forEach(System.out::println);
   }
 
   private static <T extends Order> void deleteDublicate(List<T> list) {
@@ -100,15 +84,12 @@ public class Main<T> {
 
   private static <T extends Order> void findMatch(List<T> list, String name) {
     System.out.println(list.stream()
-      .filter(e -> e.getUser().getFirstName() == name)
+      .filter(e -> e.getUser().getFirstName().equals(name))
       .findFirst());
   }
 
   private static <T extends Order> void addToCollection(List<T> list, T[] arr) {
-    for (T o : arr
-      ) {
-      list.add(o);
-    }
+    list.addAll(Stream.of(arr).collect(Collectors.toList()));
   }
 
   private static <T extends Order> void sortByOrderPrice(List<T> list) {
