@@ -83,4 +83,15 @@ public class Room {
   public void setCityName(String cityName) {
     this.cityName = cityName;
   }
+
+  @Override
+  public String toString() {
+    return "Room{" +
+      "price=" + price +
+      ", persons=" + persons +
+      ", dateAvailableFrom=" + dateAvailableFrom +
+      ", hotelName='" + hotelName + '\'' +
+      ", cityName='" + cityName + '\'' +
+      '}';
+  }
 }

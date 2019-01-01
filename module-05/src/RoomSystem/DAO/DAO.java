@@ -3,11 +3,11 @@ package RoomSystem.DAO;
 import RoomSystem.Room;
 
 public interface DAO {
-  Room[] rooms = new Room[5];
+  Room save(Room room);
 
+  boolean delete(Room room);
 
-  public Room save(Room room);
-  public boolean delete(Room room);
-  public Room update(Room room);
-  public Room findById(long id);
+  Room update(Room room);
+
+  Room findById(long id);
 }
