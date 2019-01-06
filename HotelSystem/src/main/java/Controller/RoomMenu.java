@@ -1,0 +1,60 @@
+package Controller;
+
+import DAO.Implementations.RoomWork;
+import Model.Room;
+
+import java.util.Scanner;
+
+import static Service.Colors.BLUE;
+
+public class RoomMenu {
+  public static final String ROOM_PATH = "roomDB.bin";
+
+  public void menu() {
+    boolean isStop = false;
+    Scanner scanner = new Scanner(System.in);
+    int choice;
+    while (!isStop) {
+      System.out.println(BLUE +
+        "1 - get all rooms\n" +
+        "2 - get room by id\n" +
+        "3 - get rooms by city\n" +
+        "4 - delete room by id\n" +
+        "5 - create new room\n" +
+        "6 - get free rooms at hotel\n" +
+        "7 - update room\n" +
+        "8 - return to the main menu");
+      choice = scanner.nextInt();
+      switch (choice) {
+        case 1:
+          new RoomWork().getAllRooms();
+          break;
+        case 2:
+          new RoomWork().getRoomById();
+          break;
+        case 3:
+          new RoomWork().getRoomsByCity();
+          break;
+        case 4:
+          new RoomWork().deleteRoomById();
+          break;
+        case 5:
+          new RoomWork().createNewRoom();
+          break;
+        case 6:
+          new RoomWork().gerFreeRooms();
+          break;
+        case 7:
+          new RoomWork().updateRoom();
+          break;
+        case 8:
+          isStop = true;
+          break;
+        default:
+          System.out.println("Invalid input. Try again!");
+          break;
+      }
+      scanner.nextLine();
+    }
+  }
+}

@@ -1,0 +1,94 @@
+package Model;
+
+import Service.Utils;
+
+import java.io.Serializable;
+import java.util.List;
+import java.util.Objects;
+
+public class Hotel implements Serializable {
+  private String name;
+  private String city;
+  private List<Room> roomList;
+  private int id;
+  private int sizeOfHotel;
+
+  public Hotel(String name, String city, int sizeOfHotel) {
+    this.name = name;
+    this.sizeOfHotel = sizeOfHotel;
+    this.city = city;
+    this.id = Utils.generateId();
+  }
+
+  public int getSizeOfHotel() {
+    return sizeOfHotel;
+  }
+
+  public int getId() {
+    return id;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getCity() {
+    return city;
+  }
+
+  public void setCity(String city) {
+    this.city = city;
+  }
+
+  public List<Room> getRoomList() {
+    return roomList;
+  }
+
+  public void addRoomToTheHotel(Room room) {
+    int size = getSizeOfHotel();
+    if (getSizeOfHotel() > getRoomList().size()) {
+      roomList.add(room);
+      size++;
+      setSizeOfHotel(size);
+    }
+    else {
+      System.out.println("Hotel is full!");
+    }
+  }
+
+  public void setSizeOfHotel(int sizeOfHotel) {
+    this.sizeOfHotel = sizeOfHotel;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof Hotel)) return false;
+    Hotel hotel = (Hotel) o;
+    return getId() == hotel.getId() &&
+      sizeOfHotel == hotel.sizeOfHotel &&
+      Objects.equals(getName(), hotel.getName()) &&
+      Objects.equals(getCity(), hotel.getCity());
+  }
+
+  @Override
+  public int hashCode() {
+
+    return Objects.hash(getName(), getCity(), getId(), sizeOfHotel);
+  }
+
+  @Override
+  public String toString() {
+    return "Hotel{" +
+      "name='" + name + '\'' +
+      ", city='" + city + '\'' +
+      ", roomList=" + roomList +
+      ", id=" + id +
+      ", sizeOfHotel=" + sizeOfHotel +
+      '}';
+  }
+}
