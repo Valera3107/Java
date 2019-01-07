@@ -15,7 +15,7 @@ public class UserMenu {
     boolean isStop = false;
     while (!isStop) {
       System.out.println(GREEN +
-        "1 - registered new user\n +" +
+        "1 - registered new user\n" +
         "2 - delete user\n" +
         "3 - get all users\n" +
         "4 - get user by id\n" +
@@ -29,10 +29,10 @@ public class UserMenu {
           new UserWork().deleteUserById();
           break;
         case 3:
-          new UserWork().getAllUsers();
+          new UserWork().getAllUsers().forEach(System.out::println);
           break;
         case 4:
-          new UserWork().getUserById();
+          System.out.println(new UserWork().getUserById());
           break;
         case 5:
           isStop = true;

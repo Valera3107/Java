@@ -41,12 +41,11 @@ public class HotelWork implements HotelDAO {
   @Override
   public boolean deleteHotelById() {
     List<Hotel> hotels = getAllHotels();
-    if (hotels.remove(getHotelById())) {
-      db.writeHotel(hotels, HotelMenu.HOTEL_PATH);
-      System.out.println(RED + "Hotel was successfully deleted from DB.");
-      return true;
-    }
-    return false;
+    Hotel hotel = getHotelById();
+    hotels.remove(hotel);
+    db.writeHotel(hotels, HotelMenu.HOTEL_PATH);
+    System.out.println(RED + "Hotel was successfully deleted from DB.");
+    return true;
   }
 
   @Override

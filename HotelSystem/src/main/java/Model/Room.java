@@ -115,6 +115,8 @@ public class Room implements Serializable{
       ", isReserved=" + isReserved +
       ", price=" + price +
       ", id=" + id +
+      ", city='" + city + '\'' +
+      ", inTheHotel=" + inTheHotel +
       '}';
   }
 }

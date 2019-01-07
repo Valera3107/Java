@@ -8,14 +8,14 @@ import java.util.Scanner;
 import static Service.Colors.*;
 
 public class MainMenu {
-  private static boolean isFirstLaunch = true;
-  public void firstLaunch() {
-    DataBase db = new DataBase();
-    db.writeUser(Utils.generateUsers(), UserMenu.USER_PATH);
-    db.writeRoom(Utils.generateRooms(), RoomMenu.ROOM_PATH);
-    db.writeHotel(Utils.generateHotels(), HotelMenu.HOTEL_PATH);
-    isFirstLaunch = false;
-  }
+//  private static boolean isFirstLaunch = true;
+//  public void firstLaunch() {
+//    DataBase db = new DataBase();
+//    db.writeUser(Utils.generateUsers(), UserMenu.USER_PATH);
+//    db.writeRoom(Utils.generateRooms(), RoomMenu.ROOM_PATH);
+//    db.writeHotel(Utils.generateHotels(), HotelMenu.HOTEL_PATH);
+//    isFirstLaunch = false;
+//  }
 
   public void start() {
     boolean isStop = false;
@@ -26,9 +26,9 @@ public class MainMenu {
       System.out.println(BLUE + "2 - Room menu");
       System.out.println(GREEN + "3 - User menu");
       System.out.println("4 - end work");
-      if (isFirstLaunch) {
-        System.out.println(PURPLE + "5 - IF IT IS FIRST LAUNCH, CHOOSE IT !!!");
-      }
+//      if (isFirstLaunch) {
+//        System.out.println(PURPLE + "5 - IF IT IS FIRST LAUNCH, CHOOSE IT !!!");
+//      }
       choice = scanner.nextInt();
       switch (choice) {
         case 1:
@@ -43,13 +43,13 @@ public class MainMenu {
         case 4:
           isStop = true;
           break;
-        case 5:
-          if (isFirstLaunch) {
-            firstLaunch();
-          } else {
-            System.out.println("You use program not first time! Choose another command.");
-          }
-          break;
+//        case 5:
+//          if (isFirstLaunch) {
+//            firstLaunch();
+//          } else {
+//            System.out.println("You use program not first time! Choose another command.");
+//          }
+//          break;
         default:
           System.out.println("Invalid input. Try again!");
           break;

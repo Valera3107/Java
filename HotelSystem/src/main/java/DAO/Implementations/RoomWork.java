@@ -27,6 +27,7 @@ public class RoomWork implements RoomDAO {
   public Room getRoomById() {
     System.out.println(BLUE + "Input id: ");
     int id = scanner.nextInt();
+    scanner.nextLine();
     return db.getRooms(RoomMenu.ROOM_PATH).stream().filter(e -> e.getId() == id).collect(Collectors.toList()).get(0);
   }
 
@@ -34,14 +35,14 @@ public class RoomWork implements RoomDAO {
   public List getRoomsByCity() {
     System.out.println(BLUE + "Input city:");
     String city = scanner.nextLine();
-    return db.getRooms(RoomMenu.ROOM_PATH).stream().filter(e -> e.getCity() == city).collect(Collectors.toList());
+    return db.getRooms(RoomMenu.ROOM_PATH).stream().filter(e -> e.getCity().equals(city)).collect(Collectors.toList());
   }
 
   @Override
   public boolean deleteRoomById() {
     List<Room> rooms = getAllRooms();
     if (rooms.remove(getRoomById())) {
-      db.writeRoom(rooms, HotelMenu.HOTEL_PATH);
+      db.writeRoom(rooms, RoomMenu.ROOM_PATH);
       System.out.println(BLUE + "Room was successfully deleted from DB.");
       return true;
     }
@@ -54,9 +55,12 @@ public class RoomWork implements RoomDAO {
     String city;
     int roomNumber, price;
     Room newRoom;
-    System.out.println(BLUE + "Input new room number, city and price for this room");
+    System.out.println(BLUE + "Input new: room number");
     roomNumber = scanner.nextInt();
+    scanner.nextLine();
+    System.out.println(BLUE + "Input new: city");
     city = scanner.nextLine();
+    System.out.println(BLUE + "Input new: price");
     price = scanner.nextInt();
     newRoom = new Room(roomNumber, price, city);
     if (rooms.add(newRoom)) {
@@ -68,8 +72,8 @@ public class RoomWork implements RoomDAO {
   }
 
   @Override
-  public List gerFreeRooms() {
-    return db.getRooms(RoomMenu.ROOM_PATH).stream().filter(Room::isReserved).collect(Collectors.toList());
+  public List getFreeRooms() {
+    return db.getRooms(RoomMenu.ROOM_PATH).stream().filter(e -> !e.isReserved()).collect(Collectors.toList());
   }
 
   @Override
@@ -80,9 +84,10 @@ public class RoomWork implements RoomDAO {
     System.out.println(BLUE + "Input new room number, city and price for this room");
     roomNumber = scanner.nextInt();
     city = scanner.nextLine();
+    scanner.nextLine();
     price = scanner.nextInt();
-    room.setCity(city);
     room.setPrice(price);
+    room.setCity(city);
     room.setRoomNumber(roomNumber);
     List<Room> rooms = db.readRooms(RoomMenu.ROOM_PATH);
     if (rooms.remove(rooms.stream().filter(e -> e.getId() == room.getId()).collect(Collectors.toList()).get(0))
@@ -98,28 +103,36 @@ public class RoomWork implements RoomDAO {
   @Override
   public void addUser() {
     List<Room> roomList = db.readRooms(RoomMenu.ROOM_PATH).stream().peek(System.out::println).collect(Collectors.toList());
-    System.out.println("Choose room id:");
     Room room = getRoomById();
-    System.out.println("Choose user by id:");
+    scanner.nextLine();
     db.readUsers(UserMenu.USER_PATH).forEach(System.out::println);
+    List<User> users = db.readUsers(UserMenu.USER_PATH);
     User user = new UserWork().getUserById();
+    user.setHaveRoom(true);
+    users.remove(user);
+    users.add(user);
     room.setUser(user);
     roomList.remove(room);
     roomList.add(room);
+    db.writeUser(users, UserMenu.USER_PATH);
     db.writeRoom(roomList, RoomMenu.ROOM_PATH);
   }
 
   @Override
   public void releaseRoom() {
     List<Room> roomList = db.readRooms(RoomMenu.ROOM_PATH).stream().peek(System.out::println).collect(Collectors.toList());
-    System.out.println("Choose room id:");
     Room room = getRoomById();
     System.out.println("Choose user by id:");
     db.readUsers(UserMenu.USER_PATH).forEach(System.out::println);
+    List<User> users = db.readUsers(UserMenu.USER_PATH);
     User user = new UserWork().getUserById();
+    user.setHaveRoom(false);
+    users.remove(user);
+    users.add(user);
     room.releaseRoomFromUser(user);
     roomList.remove(room);
     roomList.add(room);
+    db.writeUser(users, UserMenu.USER_PATH);
     db.writeRoom(roomList, RoomMenu.ROOM_PATH);
   }
 }

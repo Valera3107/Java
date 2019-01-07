@@ -30,13 +30,13 @@ public class RoomMenu {
       choice = scanner.nextInt();
       switch (choice) {
         case 1:
-          work.getAllRooms();
+          work.getAllRooms().forEach(System.out::println);
           break;
         case 2:
-          work.getRoomById();
+          System.out.println(work.getRoomById());
           break;
         case 3:
-          work.getRoomsByCity();
+          work.getRoomsByCity().forEach(System.out::println);
           break;
         case 4:
           work.deleteRoomById();
@@ -45,7 +45,7 @@ public class RoomMenu {
           work.createNewRoom();
           break;
         case 6:
-          work.gerFreeRooms();
+          work.getFreeRooms().forEach(System.out::println);
           break;
         case 7:
           work.updateRoom();

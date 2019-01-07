@@ -15,7 +15,7 @@ public interface RoomDAO<T extends Room> {
 
   boolean createNewRoom();
 
-  List<T> gerFreeRooms();
+  List<T> getFreeRooms();
 
   boolean updateRoom();
 

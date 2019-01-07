@@ -20,7 +20,7 @@ public class UserWork implements UserDAO {
     User user;
     int age;
     String name;
-    System.out.println(GREEN + "Input name:");
+    System.out.println(GREEN + "Input name and age:");
     name = scanner.nextLine();
     age = scanner.nextInt();
     user = new User(name, age);
