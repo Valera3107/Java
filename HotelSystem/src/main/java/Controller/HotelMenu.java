@@ -23,11 +23,13 @@ public class HotelMenu {
         "5 - create new hotel\n" +
         "6 - get rooms at hotel\n" +
         "7 - update hotel\n" +
-        "8 - return to the main menu");
+        "8 - add room to the hotel\n" +
+        "9 - remove rom from the hotel\n" +
+        "10 - return to the main menu");
       choice = scanner.nextInt();
       switch (choice) {
         case 1:
-          work.getAllHotels().stream().forEach(System.out::println);
+          work.getAllHotels().forEach(System.out::println);
           break;
         case 2:
           work.getHotelById();
@@ -42,9 +44,18 @@ public class HotelMenu {
           work.createNewHotel();
           break;
         case 6:
-          work.updateHotel();
+          work.getRoomsAtHotel();
           break;
         case 7:
+          work.updateHotel();
+          break;
+        case 8:
+          work.setRoomToTheHotel();
+          break;
+        case 9:
+          work.deleteRoomFromHotel();
+          break;
+        case 10:
           isStop = true;
           break;
         default:

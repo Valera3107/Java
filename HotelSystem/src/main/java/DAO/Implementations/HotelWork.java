@@ -35,7 +35,7 @@ public class HotelWork implements HotelDAO {
   public List getHotelsByCity() {
     System.out.println(RED + "Input city:");
     String city = scanner.next();
-    return db.getHotels(HotelMenu.HOTEL_PATH).stream().filter(e -> e.getCity() == city).collect(Collectors.toList());
+    return db.getHotels(HotelMenu.HOTEL_PATH).stream().filter(e -> e.getCity().equals(city)).collect(Collectors.toList());
   }
 
   @Override
@@ -98,6 +98,29 @@ public class HotelWork implements HotelDAO {
 
   @Override
   public void setRoomToTheHotel() {
+    System.out.println("Choose hotel id:");
+    List<Hotel> hotelList = db.readHotels(HotelMenu.HOTEL_PATH).stream().peek(System.out::println).collect(Collectors.toList());
+    Hotel hotel = getHotelById();
+    System.out.println("Choose room id:");
+    List<Room> roomList = db.readRooms(HotelMenu.HOTEL_PATH).stream().peek(System.out::println).collect(Collectors.toList());
+    Room room = new RoomWork().getRoomById();
+    hotel.addRoomToTheHotel(room);
+    hotelList.remove(hotel);
+    hotelList.add(hotel);
+    db.writeHotel(hotelList, HotelMenu.HOTEL_PATH);
+  }
 
+  @Override
+  public void deleteRoomFromHotel() {
+    System.out.println("Choose hotel id:");
+    List<Hotel> hotelList = db.readHotels(HotelMenu.HOTEL_PATH).stream().peek(System.out::println).collect(Collectors.toList());
+    Hotel hotel = getHotelById();
+    System.out.println("Choose room id:");
+    List<Room> roomList = db.readRooms(HotelMenu.HOTEL_PATH).stream().peek(System.out::println).collect(Collectors.toList());
+    Room room = new RoomWork().getRoomById();
+    hotel.deleteRoomFromHotel(room);
+    hotelList.remove(hotel);
+    hotelList.add(hotel);
+    db.writeHotel(hotelList, HotelMenu.HOTEL_PATH);
   }
 }

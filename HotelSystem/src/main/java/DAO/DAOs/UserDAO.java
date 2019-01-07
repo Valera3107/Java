@@ -1,14 +1,14 @@
 package DAO.DAOs;
 
 import Model.User;
-import com.sun.tools.javac.util.List;
+import java.util.List;
 
-public interface UserDAO<T extends User> {
+public interface UserDAO {
   boolean addNewUser();
 
   boolean deleteUserById();
 
-  List<T> getAllUsers();
+  List<User> getAllUsers();
 
-  T getUserById();
+  User getUserById();
 }

@@ -4,8 +4,7 @@ import Controller.UserMenu;
 import DAO.DAOs.UserDAO;
 import Model.User;
 import Service.DataBase;
-import com.sun.tools.javac.util.List;
-
+import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
@@ -25,7 +24,7 @@ public class UserWork implements UserDAO {
     name = scanner.nextLine();
     age = scanner.nextInt();
     user = new User(name, age);
-    List allUsers = getAllUsers();
+    List<User> allUsers = getAllUsers();
     if (allUsers.add(user)) {
       db.writeUser(allUsers, UserMenu.USER_PATH);
       System.out.println(GREEN + "User has successfully added.");
@@ -47,7 +46,7 @@ public class UserWork implements UserDAO {
 
   @Override
   public List getAllUsers() {
-    return (List) db.getUsers(UserMenu.USER_PATH);
+    return db.getUsers(UserMenu.USER_PATH);
   }
 
   @Override

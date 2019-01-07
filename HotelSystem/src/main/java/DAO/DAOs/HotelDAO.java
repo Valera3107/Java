@@ -21,4 +21,6 @@ public interface HotelDAO<T extends Hotel> {
   boolean updateHotel();
 
   void setRoomToTheHotel();
+
+  void deleteRoomFromHotel();
 }

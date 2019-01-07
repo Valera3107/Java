@@ -18,5 +18,9 @@ public interface RoomDAO<T extends Room> {
   List<T> gerFreeRooms();
 
   boolean updateRoom();
+
+  void addUser();
+
+  void releaseRoom();
 }
 

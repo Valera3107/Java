@@ -2,8 +2,10 @@ package DAO.Implementations;
 
 import Controller.HotelMenu;
 import Controller.RoomMenu;
+import Controller.UserMenu;
 import DAO.DAOs.RoomDAO;
 import Model.Room;
+import Model.User;
 import Service.DataBase;
 
 import java.util.List;
@@ -91,5 +93,33 @@ public class RoomWork implements RoomDAO {
       return true;
     }
     return false;
+  }
+
+  @Override
+  public void addUser() {
+    List<Room> roomList = db.readRooms(RoomMenu.ROOM_PATH).stream().peek(System.out::println).collect(Collectors.toList());
+    System.out.println("Choose room id:");
+    Room room = getRoomById();
+    System.out.println("Choose user by id:");
+    db.readUsers(UserMenu.USER_PATH).forEach(System.out::println);
+    User user = new UserWork().getUserById();
+    room.setUser(user);
+    roomList.remove(room);
+    roomList.add(room);
+    db.writeRoom(roomList, RoomMenu.ROOM_PATH);
+  }
+
+  @Override
+  public void releaseRoom() {
+    List<Room> roomList = db.readRooms(RoomMenu.ROOM_PATH).stream().peek(System.out::println).collect(Collectors.toList());
+    System.out.println("Choose room id:");
+    Room room = getRoomById();
+    System.out.println("Choose user by id:");
+    db.readUsers(UserMenu.USER_PATH).forEach(System.out::println);
+    User user = new UserWork().getUserById();
+    room.releaseRoomFromUser(user);
+    roomList.remove(room);
+    roomList.add(room);
+    db.writeRoom(roomList, RoomMenu.ROOM_PATH);
   }
 }

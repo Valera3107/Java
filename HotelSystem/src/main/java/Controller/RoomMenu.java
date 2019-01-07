@@ -11,6 +11,7 @@ public class RoomMenu {
   public static final String ROOM_PATH = "roomDB.bin";
 
   public void menu() {
+    RoomWork work = new RoomWork();
     boolean isStop = false;
     Scanner scanner = new Scanner(System.in);
     int choice;
@@ -23,31 +24,39 @@ public class RoomMenu {
         "5 - create new room\n" +
         "6 - get free rooms at hotel\n" +
         "7 - update room\n" +
-        "8 - return to the main menu");
+        "8 - add user to rhe room\n" +
+        "9 - delete user from the room\n" +
+        "10 - return to the main menu");
       choice = scanner.nextInt();
       switch (choice) {
         case 1:
-          new RoomWork().getAllRooms();
+          work.getAllRooms();
           break;
         case 2:
-          new RoomWork().getRoomById();
+          work.getRoomById();
           break;
         case 3:
-          new RoomWork().getRoomsByCity();
+          work.getRoomsByCity();
           break;
         case 4:
-          new RoomWork().deleteRoomById();
+          work.deleteRoomById();
           break;
         case 5:
-          new RoomWork().createNewRoom();
+          work.createNewRoom();
           break;
         case 6:
-          new RoomWork().gerFreeRooms();
+          work.gerFreeRooms();
           break;
         case 7:
-          new RoomWork().updateRoom();
+          work.updateRoom();
           break;
         case 8:
+          work.addUser();
+          break;
+        case 9:
+          work.releaseRoom();
+          break;
+        case 10:
           isStop = true;
           break;
         default:

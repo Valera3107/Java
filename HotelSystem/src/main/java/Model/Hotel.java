@@ -50,13 +50,30 @@ public class Hotel implements Serializable {
 
   public void addRoomToTheHotel(Room room) {
     int size = getSizeOfHotel();
-    if (getSizeOfHotel() > getRoomList().size()) {
+    if (getSizeOfHotel() > getRoomList().size() && getCity().equals(room.getCity()) && !room.isInTheHotel()) {
       roomList.add(room);
       size++;
       setSizeOfHotel(size);
+      room.setInTheHotel(true);
+      System.out.println("Room has added.");
     }
-    else {
+    if (!getCity().equals(room.getCity())) {
+      System.out.println("Room and hotel in different city's.");
+    } else {
       System.out.println("Hotel is full!");
+    }
+  }
+
+  public void deleteRoomFromHotel(Room room) {
+    int size = getSizeOfHotel();
+    if(getCity().equals(room.getCity()) && room.isInTheHotel()){
+      roomList.remove(room);
+      size--;
+      room.setInTheHotel(false);
+      setSizeOfHotel(size);
+      System.out.println("Room has deleted.");
+    } else {
+      System.out.println("Room and hotel in different city's or room is not in this hotel.");
     }
   }
 
@@ -77,7 +94,6 @@ public class Hotel implements Serializable {
 
   @Override
   public int hashCode() {
-
     return Objects.hash(getName(), getCity(), getId(), sizeOfHotel);
   }
 

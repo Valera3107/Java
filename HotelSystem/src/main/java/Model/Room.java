@@ -12,14 +12,24 @@ public class Room implements Serializable{
   private double price;
   private int id;
   private String city;
+  private boolean inTheHotel;
 
   public Room(int roomNumber, double price, String city) {
     this.roomNumber = roomNumber;
     this.price = price;
     this.isReserved = false;
+    this.inTheHotel = false;
     this.user = null;
     this.city = city;
     this.id = Utils.generateId();
+  }
+
+  public boolean isInTheHotel() {
+    return inTheHotel;
+  }
+
+  public void setInTheHotel(boolean inTheHotel) {
+    this.inTheHotel = inTheHotel;
   }
 
   public String getCity() {
@@ -63,7 +73,23 @@ public class Room implements Serializable{
   }
 
   public void setUser(User user) {
-    this.user = user;
+    if(!isReserved() && !user.isHaveRoom()){
+      this.user = user;
+      user.setHaveRoom(true);
+      setReserved(true);
+    } else {
+      System.out.println("Room is booked or with user. Choose another room.");
+    }
+  }
+
+  public void releaseRoomFromUser(User user) {
+    if(user.isHaveRoom() && isReserved) {
+      user.setHaveRoom(false);
+      setReserved(false);
+      this.user = null;
+    } else {
+      System.out.println("This room is already free or user has not room yet.");
+    }
   }
 
   @Override

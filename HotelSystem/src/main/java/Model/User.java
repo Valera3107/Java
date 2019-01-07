@@ -9,11 +9,21 @@ public class User implements Serializable{
   private String name;
   private int age;
   private int id;
+  private boolean haveRoom;
 
   public User(String name, int age) {
     this.name = name;
+    this.haveRoom = false;
     this.age = age;
     this.id = Utils.generateId();
+  }
+
+  public boolean isHaveRoom() {
+    return haveRoom;
+  }
+
+  public void setHaveRoom(boolean haveRoom) {
+    this.haveRoom = haveRoom;
   }
 
   public int getId() {
@@ -48,16 +58,16 @@ public class User implements Serializable{
 
   @Override
   public int hashCode() {
-
     return Objects.hash(getName(), getAge(), getId());
   }
 
   @Override
   public String toString() {
     return "User{" +
-      "name='" + name + '\'' +
-      ", age='" + age + '\'' +
-      ", id=" + id +
+      "name = '" + name + '\'' +
+      ", age = " + age +
+      ", id = " + id +
+      ", haveRoom = " + haveRoom +
       '}';
   }
 }
